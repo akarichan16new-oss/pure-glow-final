@@ -1,0 +1,33 @@
+# ============================================================================
+# PureGlow AI - Python Dependencies
+# ============================================================================
+# Install with:    pip install -r requirements.txt
+# Upgrade with:    pip install --upgrade -r requirements.txt
+# ============================================================================
+
+# ── Flask core ───────────────────────────────────────────────────────────────
+Flask==3.0.3
+flask-cors==4.0.1
+Werkzeug==3.0.3
+
+# ── Data layer (used by recommendation_engine.py and the notebooks) ──────────
+pandas==2.2.2
+numpy==1.26.4
+
+# ── Environment configuration ────────────────────────────────────────────────
+python-dotenv==1.0.1
+
+# ── Production WSGI server ───────────────────────────────────────────────────
+gunicorn==22.0.0
+
+# ── Notebook tooling (only needed if you re-run the notebooks) ──────────────
+jupyter==1.0.0
+ipykernel==6.29.4
+matplotlib==3.9.0
+seaborn==0.13.2
+openpyxl==3.1.2
+
+# ── Testing ──────────────────────────────────────────────────────────────────
+pytest==8.2.0
+pytest-flask==1.3.0
+requests==2.32.3

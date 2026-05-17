@@ -1,0 +1,222 @@
+{
+  "Reviews": {
+    "rows": 1094411,
+    "columns": [
+      "unnamed_0",
+      "author_id",
+      "rating",
+      "is_recommended",
+      "helpfulness",
+      "total_feedback_count",
+      "total_neg_feedback_count",
+      "total_pos_feedback_count",
+      "submission_time",
+      "review_text",
+      "review_title",
+      "skin_tone",
+      "eye_color",
+      "skin_type",
+      "hair_color",
+      "product_id",
+      "product_name",
+      "brand_name",
+      "price_usd"
+    ],
+    "missing_pct": 9.39
+  },
+  "Skincare": {
+    "rows": 3474,
+    "columns": [
+      "unnamed_0",
+      "brand",
+      "name",
+      "price",
+      "n_of_reviews",
+      "n_of_loves",
+      "review_score",
+      "size",
+      "clean_product",
+      "category_anti_aging",
+      "category_bb__cc_cream",
+      "category_bath__shower",
+      "category_beauty_supplements",
+      "category_blemish__acne_treatments",
+      "category_blotting_papers",
+      "category_body_lotions__body_oils",
+      "category_cellulite__stretch_marks",
+      "category_decollete__neck_creams",
+      "category_exfoliators",
+      "category_eye_creams__treatments",
+      "category_eye_masks",
+      "category_face_masks",
+      "category_face_oils",
+      "category_face_primer",
+      "category_face_serums",
+      "category_face_sunscreen",
+      "category_face_wash__cleansers",
+      "category_facial_peels",
+      "category_foundation",
+      "category_hair_oil",
+      "category_highlighter",
+      "category_holistic_wellness",
+      "category_mini_size",
+      "category_mists__essences",
+      "category_moisturizer__treatments",
+      "category_moisturizers",
+      "category_night_creams",
+      "category_setting_spray__powder",
+      "category_sheet_masks",
+      "category_skincare",
+      "category_tinted_moisturizer",
+      "category_toners",
+      "category_tools",
+      "category_value__gift_sets",
+      "reviews_to_loves_ratio",
+      "return_on_reviews",
+      "price_per_ounce",
+      "sub_category",
+      "category"
+    ],
+    "missing_pct": 43.34
+  },
+  "URLs": {
+    "rows": 4,
+    "columns": [
+      "0",
+      "httpswwwsephoracomproductprotini_tm_polypeptide_cream_p427421icid2products20gridp427421product",
+      "url_category",
+      "httpswwwsephoracomproductbanana_bright_eye_creme_p426339icid2products20gridp426339product",
+      "httpswwwsephoracomproductdouble_serum_complete_age_control_concentrate_p421235icid2products20gridp421235product",
+      "httpswwwsephoracomproductsilk_pillowcase_standard_queen_p402944icid2products20gridp402944product"
+    ],
+    "missing_pct": 50.0
+  },
+  "Rankings": {
+    "rows": 400,
+    "columns": [
+      "unnamed_0",
+      "brand",
+      "name",
+      "price",
+      "ranking_type",
+      "sumn_of_loves",
+      "sumn_of_reviews",
+      "sumreview_score"
+    ],
+    "missing_pct": 46.88
+  },
+  "Product Info": {
+    "rows": 8494,
+    "columns": [
+      "product_id",
+      "product_name",
+      "brand_id",
+      "brand_name",
+      "loves_count",
+      "rating",
+      "reviews",
+      "size",
+      "variation_type",
+      "variation_value",
+      "variation_desc",
+      "ingredients",
+      "price_usd",
+      "value_price_usd",
+      "sale_price_usd",
+      "limited_edition",
+      "new",
+      "online_only",
+      "out_of_stock",
+      "sephora_exclusive",
+      "highlights",
+      "primary_category",
+      "secondary_category",
+      "tertiary_category",
+      "child_count",
+      "child_max_price",
+      "child_min_price"
+    ],
+    "missing_pct": 19.35
+  },
+  "Product List": {
+    "rows": 237,
+    "columns": [
+      "unnamed_0",
+      "product_id",
+      "product_name",
+      "product_brand",
+      "price",
+      "product_description",
+      "product_type"
+    ],
+    "missing_pct": 0.0
+  },
+  "Sephora": {
+    "rows": 2179,
+    "columns": [
+      "cosmetic_link",
+      "brand_name",
+      "cosmetic_name",
+      "num_customer",
+      "price",
+      "ingredients",
+      "about",
+      "reviews",
+      "recommended",
+      "what_it_is",
+      "skin_type",
+      "skincare_concerns",
+      "formulation",
+      "benefits",
+      "highlighted_ingredients",
+      "ingredient_callouts",
+      "what_else_you_need_to_know",
+      "clinical_results",
+      "clean_ingredients",
+      "new_ingredients"
+    ],
+    "missing_pct": 26.47
+  },
+  "Brands": {
+    "rows": 100,
+    "columns": [
+      "unnamed_0",
+      "brand",
+      "countbrand"
+    ],
+    "missing_pct": 0.0
+  },
+  "Makeup": {
+    "rows": 931,
+    "columns": [
+      "id",
+      "brand",
+      "name",
+      "price",
+      "price_sign",
+      "currency",
+      "image_link",
+      "product_link",
+      "website_link",
+      "description",
+      "rating",
+      "category",
+      "product_type",
+      "tag_list",
+      "created_at",
+      "updated_at",
+      "product_api_url",
+      "api_featured_image",
+      "product_colors"
+    ],
+    "missing_pct": 25.0
+  },
+  "Ingredients": {
+    "rows": 66417,
+    "columns": [
+      "cosmetic",
+      "ingredient"
+    ],
+    "missing_pct": 0.0
+  }
+}

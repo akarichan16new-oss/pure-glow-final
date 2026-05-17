@@ -1,0 +1,2973 @@
+{
+  "generated_at": "2026-05-09T18:34:10.291898",
+  "engine_data": {
+    "skincare_products": 3474,
+    "makeup_products": 931
+  },
+  "summary": {
+    "total": 412,
+    "passed": 411,
+    "warned": 1,
+    "failed": 0,
+    "pass_pct": 99.76,
+    "ready_for_flask": true
+  },
+  "suites": {
+    "A": {
+      "total": 23,
+      "passed": 23,
+      "warned": 0,
+      "failed": 0
+    },
+    "B": {
+      "total": 57,
+      "passed": 56,
+      "warned": 1,
+      "failed": 0
+    },
+    "C": {
+      "total": 37,
+      "passed": 37,
+      "warned": 0,
+      "failed": 0
+    },
+    "D": {
+      "total": 26,
+      "passed": 26,
+      "warned": 0,
+      "failed": 0
+    },
+    "E": {
+      "total": 67,
+      "passed": 67,
+      "warned": 0,
+      "failed": 0
+    },
+    "F": {
+      "total": 72,
+      "passed": 72,
+      "warned": 0,
+      "failed": 0
+    },
+    "G": {
+      "total": 33,
+      "passed": 33,
+      "warned": 0,
+      "failed": 0
+    },
+    "H": {
+      "total": 72,
+      "passed": 72,
+      "warned": 0,
+      "failed": 0
+    },
+    "I": {
+      "total": 7,
+      "passed": 7,
+      "warned": 0,
+      "failed": 0
+    },
+    "J": {
+      "total": 18,
+      "passed": 18,
+      "warned": 0,
+      "failed": 0
+    }
+  },
+  "failures": [],
+  "warnings": [
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "has column [source_category]: 02_skincare_products_clean.csv",
+      "status": "WARN",
+      "detail": ""
+    }
+  ],
+  "all_results": [
+    {
+      "suite": "A",
+      "group": "Model files (outputs of notebook 03)",
+      "test": "exists: skincare_products.csv",
+      "status": "PASS",
+      "detail": "C:\\Users\\HP\\OneDrive\\Desktop\\PureGlow AI\\models\\skincare_products.csv"
+    },
+    {
+      "suite": "A",
+      "group": "Model files (outputs of notebook 03)",
+      "test": "non-empty: skincare_products.csv",
+      "status": "PASS",
+      "detail": "538,303 bytes"
+    },
+    {
+      "suite": "A",
+      "group": "Model files (outputs of notebook 03)",
+      "test": "exists: makeup_products.csv",
+      "status": "PASS",
+      "detail": "C:\\Users\\HP\\OneDrive\\Desktop\\PureGlow AI\\models\\makeup_products.csv"
+    },
+    {
+      "suite": "A",
+      "group": "Model files (outputs of notebook 03)",
+      "test": "non-empty: makeup_products.csv",
+      "status": "PASS",
+      "detail": "200,760 bytes"
+    },
+    {
+      "suite": "A",
+      "group": "Model files (outputs of notebook 03)",
+      "test": "exists: colour_config.json",
+      "status": "PASS",
+      "detail": "C:\\Users\\HP\\OneDrive\\Desktop\\PureGlow AI\\models\\colour_config.json"
+    },
+    {
+      "suite": "A",
+      "group": "Model files (outputs of notebook 03)",
+      "test": "non-empty: colour_config.json",
+      "status": "PASS",
+      "detail": "2,121 bytes"
+    },
+    {
+      "suite": "A",
+      "group": "Model files (outputs of notebook 03)",
+      "test": "exists: keyword_maps.json",
+      "status": "PASS",
+      "detail": "C:\\Users\\HP\\OneDrive\\Desktop\\PureGlow AI\\models\\keyword_maps.json"
+    },
+    {
+      "suite": "A",
+      "group": "Model files (outputs of notebook 03)",
+      "test": "non-empty: keyword_maps.json",
+      "status": "PASS",
+      "detail": "2,286 bytes"
+    },
+    {
+      "suite": "A",
+      "group": "recommendation_engine.py (output of notebook 03)",
+      "test": "file exists",
+      "status": "PASS",
+      "detail": "C:\\Users\\HP\\OneDrive\\Desktop\\PureGlow AI\\src\\recommendation_engine.py"
+    },
+    {
+      "suite": "A",
+      "group": "Python imports from recommendation_engine",
+      "test": "PureGlowRecommendationEngine",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "A",
+      "group": "Python imports from recommendation_engine",
+      "test": "load_engine",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "A",
+      "group": "Python imports from recommendation_engine",
+      "test": "score_skincare",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "A",
+      "group": "Python imports from recommendation_engine",
+      "test": "score_makeup",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "A",
+      "group": "Python imports from recommendation_engine",
+      "test": "SKIN_TYPE_KEYWORDS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "A",
+      "group": "Python imports from recommendation_engine",
+      "test": "CONCERN_KEYWORDS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "A",
+      "group": "Python imports from recommendation_engine",
+      "test": "UNDERTONE_KEYWORDS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "A",
+      "group": "load_engine() constructs a valid engine",
+      "test": "returns PureGlowRecommendationEngine",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "A",
+      "group": "load_engine() constructs a valid engine",
+      "test": "skincare_df is a DataFrame",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "A",
+      "group": "load_engine() constructs a valid engine",
+      "test": "makeup_df is a DataFrame",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "A",
+      "group": "load_engine() constructs a valid engine",
+      "test": "colour_config is a dict",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "A",
+      "group": "load_engine() constructs a valid engine",
+      "test": "skincare_df has rows",
+      "status": "PASS",
+      "detail": "3,474 rows"
+    },
+    {
+      "suite": "A",
+      "group": "load_engine() constructs a valid engine",
+      "test": "makeup_df has rows",
+      "status": "PASS",
+      "detail": "931 rows"
+    },
+    {
+      "suite": "A",
+      "group": "load_engine() constructs a valid engine",
+      "test": "colour_config not empty",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 01_reviews_clean.csv",
+      "status": "PASS",
+      "detail": "1,094,411 rows x 19 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (50000): 01_reviews_clean.csv",
+      "status": "PASS",
+      "detail": "got 1,094,411"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "has column [rating]: 01_reviews_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 02_skincare_products_clean.csv",
+      "status": "PASS",
+      "detail": "3,474 rows x 49 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (100): 02_skincare_products_clean.csv",
+      "status": "PASS",
+      "detail": "got 3,474"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "has column [source_category]: 02_skincare_products_clean.csv",
+      "status": "WARN",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 03_product_urls_clean.csv",
+      "status": "PASS",
+      "detail": "4 rows x 6 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 03_product_urls_clean.csv",
+      "status": "PASS",
+      "detail": "got 4"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 04_popularity_rankings_clean.csv",
+      "status": "PASS",
+      "detail": "400 rows x 8 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (50): 04_popularity_rankings_clean.csv",
+      "status": "PASS",
+      "detail": "got 400"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "has column [ranking_type]: 04_popularity_rankings_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 05_product_info_clean.csv",
+      "status": "PASS",
+      "detail": "8,494 rows x 27 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 05_product_info_clean.csv",
+      "status": "PASS",
+      "detail": "got 8,494"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 06_productlist_clean.csv",
+      "status": "PASS",
+      "detail": "237 rows x 7 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 06_productlist_clean.csv",
+      "status": "PASS",
+      "detail": "got 237"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 07_sephora_clean.csv",
+      "status": "PASS",
+      "detail": "2,179 rows x 20 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (100): 07_sephora_clean.csv",
+      "status": "PASS",
+      "detail": "got 2,179"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 08_brands_clean.csv",
+      "status": "PASS",
+      "detail": "100 rows x 3 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 08_brands_clean.csv",
+      "status": "PASS",
+      "detail": "got 100"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 09_makeup_clean.csv",
+      "status": "PASS",
+      "detail": "931 rows x 19 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 09_makeup_clean.csv",
+      "status": "PASS",
+      "detail": "got 931"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 10_ingredients_clean.csv",
+      "status": "PASS",
+      "detail": "66,417 rows x 2 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 10_ingredients_clean.csv",
+      "status": "PASS",
+      "detail": "got 66,417"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 11_paula_sumlist_clean.csv",
+      "status": "PASS",
+      "detail": "26,087 rows x 4 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 11_paula_sumlist_clean.csv",
+      "status": "PASS",
+      "detail": "got 26,087"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 12_paula_embeddings_clean.csv",
+      "status": "PASS",
+      "detail": "0 rows x 11 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (0): 12_paula_embeddings_clean.csv",
+      "status": "PASS",
+      "detail": "got 0"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 13_alternatives_clean.csv",
+      "status": "PASS",
+      "detail": "1,334 rows x 2 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 13_alternatives_clean.csv",
+      "status": "PASS",
+      "detail": "got 1,334"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 14_datasheet_clean.csv",
+      "status": "PASS",
+      "detail": "19,040 rows x 6 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 14_datasheet_clean.csv",
+      "status": "PASS",
+      "detail": "got 19,040"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 15_output_clean.csv",
+      "status": "PASS",
+      "detail": "931 rows x 19 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 15_output_clean.csv",
+      "status": "PASS",
+      "detail": "got 931"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 16_pretty_numbers_clean.csv",
+      "status": "PASS",
+      "detail": "1,689 rows x 47 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 16_pretty_numbers_clean.csv",
+      "status": "PASS",
+      "detail": "got 1,689"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "exists: 17_pretty_regression_clean.csv",
+      "status": "PASS",
+      "detail": "1,689 rows x 10 cols"
+    },
+    {
+      "suite": "B",
+      "group": "File existence and minimum row counts",
+      "test": "min rows (1): 17_pretty_regression_clean.csv",
+      "status": "PASS",
+      "detail": "got 1,689"
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 01_reviews_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 02_skincare_products_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 03_product_urls_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 04_popularity_rankings_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 05_product_info_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 06_productlist_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 07_sephora_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 08_brands_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 09_makeup_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 10_ingredients_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 11_paula_sumlist_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 13_alternatives_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 14_datasheet_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 15_output_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 16_pretty_numbers_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "Column-name standardisation (lowercase, no spaces)",
+      "test": "clean columns: 17_pretty_regression_clean.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "B",
+      "group": "No fully-empty rows (basic_clean guarantee)",
+      "test": "no all-null rows: 01_reviews_clean.csv",
+      "status": "PASS",
+      "detail": "0 found"
+    },
+    {
+      "suite": "B",
+      "group": "No fully-empty rows (basic_clean guarantee)",
+      "test": "no all-null rows: 02_skincare_products_clean.csv",
+      "status": "PASS",
+      "detail": "0 found"
+    },
+    {
+      "suite": "B",
+      "group": "No fully-empty rows (basic_clean guarantee)",
+      "test": "no all-null rows: 07_sephora_clean.csv",
+      "status": "PASS",
+      "detail": "0 found"
+    },
+    {
+      "suite": "B",
+      "group": "No fully-empty rows (basic_clean guarantee)",
+      "test": "no all-null rows: 09_makeup_clean.csv",
+      "status": "PASS",
+      "detail": "0 found"
+    },
+    {
+      "suite": "C",
+      "group": "standardise_columns()",
+      "test": "spaces \u2192 underscores",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "standardise_columns()",
+      "test": "hyphens \u2192 underscores",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "standardise_columns()",
+      "test": "uppercase \u2192 lowercase",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "standardise_columns()",
+      "test": "special chars stripped",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "standardise_columns()",
+      "test": "trailing spaces stripped",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "standardise_columns()",
+      "test": "original df not mutated",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "basic_clean()",
+      "test": "column names lowercased",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "basic_clean()",
+      "test": "whitespace stripped from strings",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "basic_clean()",
+      "test": "empty strings \u2192 NaN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "basic_clean()",
+      "test": "fully-null rows dropped",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "basic_clean()",
+      "test": "exact duplicates removed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "basic_clean()",
+      "test": "index reset to 0-based",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "basic_clean()",
+      "test": "drop_dup_subset respected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "basic_clean()",
+      "test": "drop_all_na_rows=False keeps null rows",
+      "status": "PASS",
+      "detail": "got 3 rows"
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "returns dict of bool Series",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "tag keys match keyword_map keys",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "case-insensitive match",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "partial-word match (hydrat)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "NaN handled \u2014 no crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "non-matching product scores False",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "Series length matches input",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "SKIN_TYPE_KEYWORDS: oily product tagged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "SKIN_TYPE_KEYWORDS: dry product tagged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "SKIN_TYPE_KEYWORDS: sensitive product tagged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "SKIN_TYPE_KEYWORDS: combination tagged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "CONCERN_KEYWORDS: acne tagged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "CONCERN_KEYWORDS: dark_spots tagged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "CONCERN_KEYWORDS: redness tagged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "CONCERN_KEYWORDS: dullness tagged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "CONCERN_KEYWORDS: aging tagged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "tag_column()",
+      "test": "CONCERN_KEYWORDS: dryness tagged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "get_col()",
+      "test": "returns mapped column when present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "get_col()",
+      "test": "numeric column returned correctly",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "get_col()",
+      "test": "missing col key \u2192 default Series (nan)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "get_col()",
+      "test": "missing key in mapping \u2192 default Series",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "get_col()",
+      "test": "custom default returned",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "C",
+      "group": "get_col()",
+      "test": "returned Series has correct length",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 structure",
+      "test": "returns DataFrame",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 structure",
+      "test": "has relevance_score column",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 structure",
+      "test": "same row count as input",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 structure",
+      "test": "sorted descending",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 structure",
+      "test": "sk_0 ranked first for oily+acne",
+      "status": "PASS",
+      "detail": "got sk_0"
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 structure",
+      "test": "sk_2 ranked last (no tags)",
+      "status": "PASS",
+      "detail": "got sk_2"
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 weight formula: 40% + 40% + 20%",
+      "test": "top score matches 40+40+20 formula",
+      "status": "PASS",
+      "detail": "expected=1.0 actual=1.0"
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 weight formula: 40% + 40% + 20%",
+      "test": "bottom score = quality-only (no tag match)",
+      "status": "PASS",
+      "detail": "expected=0.1042 actual=0.1042"
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 score bounds and edge cases",
+      "test": "all scores in [0, 1]",
+      "status": "PASS",
+      "detail": "min=0.1042 max=1.0000"
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 score bounds and edge cases",
+      "test": "multi-concern: sk_1 ranked first",
+      "status": "PASS",
+      "detail": "got sk_1"
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 score bounds and edge cases",
+      "test": "multi-concern weight split correctly (0.40/n each)",
+      "status": "PASS",
+      "detail": "expected=0.975 actual=0.975"
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 score bounds and edge cases",
+      "test": "concerns=[] does not crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 score bounds and edge cases",
+      "test": "concerns=[] max score \u2264 0.60 + quality component",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 score bounds and edge cases",
+      "test": "no rating column: no crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_skincare() \u2014 score bounds and edge cases",
+      "test": "no rating column: top score = 0.80 (skin+concern only)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_makeup() \u2014 structure and sort order",
+      "test": "returns DataFrame",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_makeup() \u2014 structure and sort order",
+      "test": "has relevance_score column",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_makeup() \u2014 structure and sort order",
+      "test": "sorted descending",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_makeup() \u2014 structure and sort order",
+      "test": "mk_0 (warm) ranked first for warm",
+      "status": "PASS",
+      "detail": "got mk_0"
+    },
+    {
+      "suite": "D",
+      "group": "score_makeup() \u2014 structure and sort order",
+      "test": "all scores in [0, 1]",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_makeup() \u2014 weight formula: 60% + 20% product_type + 20% quality",
+      "test": "top score matches 60+20 formula (no type filter)",
+      "status": "PASS",
+      "detail": "expected=0.8 actual=0.8"
+    },
+    {
+      "suite": "D",
+      "group": "score_makeup() \u2014 weight formula: 60% + 20% product_type + 20% quality",
+      "test": "product_type filter adds 20% boost",
+      "status": "PASS",
+      "detail": "expected=1.0 actual=1.0"
+    },
+    {
+      "suite": "D",
+      "group": "score_makeup() \u2014 weight formula: 60% + 20% product_type + 20% quality",
+      "test": "type-filtered: blush product ranked first",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "D",
+      "group": "score_makeup() \u2014 weight formula: 60% + 20% product_type + 20% quality",
+      "test": "cool: mk_1 ranked first",
+      "status": "PASS",
+      "detail": "got mk_1"
+    },
+    {
+      "suite": "D",
+      "group": "score_makeup() \u2014 weight formula: 60% + 20% product_type + 20% quality",
+      "test": "neutral: mk_2 ranked first",
+      "status": "PASS",
+      "detail": "got mk_2"
+    },
+    {
+      "suite": "D",
+      "group": "score_makeup() \u2014 weight formula: 60% + 20% product_type + 20% quality",
+      "test": "product_types=None: no crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "_validate() \u2014 raises ValueError for bad inputs",
+      "test": "bad skin_type \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid skin_type 'greasy'. Choose from: ['oily', 'dry', 'co"
+    },
+    {
+      "suite": "E",
+      "group": "_validate() \u2014 raises ValueError for bad inputs",
+      "test": "bad concern \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid concerns ['wrinkles']. Choose from: ['acne', 'dark_s"
+    },
+    {
+      "suite": "E",
+      "group": "_validate() \u2014 raises ValueError for bad inputs",
+      "test": "bad undertone \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid undertone 'pink'. Choose from: ['warm', 'cool', 'neu"
+    },
+    {
+      "suite": "E",
+      "group": "_validate() \u2014 raises ValueError for bad inputs",
+      "test": "valid skin_type=oily: no raise",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "_validate() \u2014 raises ValueError for bad inputs",
+      "test": "valid skin_type=dry: no raise",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "_validate() \u2014 raises ValueError for bad inputs",
+      "test": "valid skin_type=combination: no raise",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "_validate() \u2014 raises ValueError for bad inputs",
+      "test": "valid skin_type=sensitive: no raise",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "output has column: product_id",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "output has column: name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "output has column: brand",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "output has column: category",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "output has column: price",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "output has column: rating",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "output has column: relevance_score",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "output has column: url",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "respects top_n=3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "returns DataFrame",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "index is 0-based reset",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "first result is sk_0",
+      "status": "PASS",
+      "detail": "got sk_0"
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "min_score filters low-scoring products",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_skincare() \u2014 columns and top_n",
+      "test": "empty skincare_df \u2192 empty DataFrame",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "output has column: product_id",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "output has column: name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "output has column: brand",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "output has column: product_type",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "output has column: price",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "output has column: rating",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "output has column: hex_color",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "output has column: color_name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "output has column: relevance_score",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "output has column: url",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "respects top_n=3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "first result is mk_0",
+      "status": "PASS",
+      "detail": "got mk_0"
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "product_types=[lipstick]: no crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_makeup() \u2014 columns and undertone filtering",
+      "test": "empty makeup_df -> empty DataFrame",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "warm: returns dict",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "warm: description key excluded",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "warm: has blush",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "warm: has lipstick",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "warm: all values are lists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "warm: no empty shade lists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "cool: returns dict",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "cool: description key excluded",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "cool: has blush",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "cool: has lipstick",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "cool: all values are lists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "cool: no empty shade lists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "neutral: returns dict",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "neutral: description key excluded",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "neutral: has blush",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "neutral: has lipstick",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "neutral: all values are lists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "get_colour_palette() \u2014 structure",
+      "test": "neutral: no empty shade lists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "returns dict",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "has key: user_profile",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "has key: skincare_recommendations",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "has key: makeup_recommendations",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "has key: colour_palette",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "skincare_recs is list",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "makeup_recs is list",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "colour_palette is dict",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "profile.skin_type stored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "profile.concerns stored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "profile.undertone stored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "profile.skin_tone stored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "undertone=None \u2192 makeup_recs=[]",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "E",
+      "group": "recommend() \u2014 return structure",
+      "test": "undertone=None \u2192 colour_palette={}",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "oily/warm: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "oily/warm: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "oily/warm: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "oily/cool: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "oily/cool: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "oily/cool: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "oily/neutral: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "oily/neutral: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "oily/neutral: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "dry/warm: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "dry/warm: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "dry/warm: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "dry/cool: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "dry/cool: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "dry/cool: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "dry/neutral: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "dry/neutral: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "dry/neutral: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "combination/warm: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "combination/warm: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "combination/warm: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "combination/cool: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "combination/cool: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "combination/cool: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "combination/neutral: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "combination/neutral: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "combination/neutral: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "sensitive/warm: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "sensitive/warm: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "sensitive/warm: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "sensitive/cool: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "sensitive/cool: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "sensitive/cool: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "sensitive/neutral: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "sensitive/neutral: skincare recs returned",
+      "status": "PASS",
+      "detail": "5 recs"
+    },
+    {
+      "suite": "F",
+      "group": "All skin_type \u00d7 undertone combinations (uses real engine data)",
+      "test": "sensitive/neutral: profile correct",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=acne: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=acne: stored in profile",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=dark_spots: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=dark_spots: stored in profile",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=redness: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=redness: stored in profile",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=dullness: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=dullness: stored in profile",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=aging: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=aging: stored in profile",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=dryness: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Each concern in isolation",
+      "test": "concern=dryness: stored in profile",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Multi-concern stacks",
+      "test": "acne+dark_spots: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Multi-concern stacks",
+      "test": "acne+dark_spots: all concerns stored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Multi-concern stacks",
+      "test": "redness+dullness: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Multi-concern stacks",
+      "test": "redness+dullness: all concerns stored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Multi-concern stacks",
+      "test": "aging+dryness: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Multi-concern stacks",
+      "test": "aging+dryness: all concerns stored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Multi-concern stacks",
+      "test": "acne+dark_spots+redness: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Multi-concern stacks",
+      "test": "acne+dark_spots+redness: all concerns stored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Multi-concern stacks",
+      "test": "acne+dark_spots+redness\u2026: no exception",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "Multi-concern stacks",
+      "test": "acne+dark_spots+redness\u2026: all concerns stored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=0: skincare count \u2264 0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=0: makeup count \u2264 0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=1: skincare count \u2264 1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=1: makeup count \u2264 1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=3: skincare count \u2264 3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=3: makeup count \u2264 3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=5: skincare count \u2264 5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=5: makeup count \u2264 5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=10: skincare count \u2264 10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=10: makeup count \u2264 10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=25: skincare count \u2264 25",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=25: makeup count \u2264 25",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=100: skincare count \u2264 100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "F",
+      "group": "top_n boundary values",
+      "test": "top_n=100: makeup count \u2264 100",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "Invalid skin_type strings",
+      "test": "skin_type='greasy' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid skin_type 'greasy'. Choose from: ['oily', 'dry', 'co"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid skin_type strings",
+      "test": "skin_type='oily ' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid skin_type 'oily '. Choose from: ['oily', 'dry', 'com"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid skin_type strings",
+      "test": "skin_type='OILY' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid skin_type 'OILY'. Choose from: ['oily', 'dry', 'comb"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid skin_type strings",
+      "test": "skin_type='Oily' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid skin_type 'Oily'. Choose from: ['oily', 'dry', 'comb"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid skin_type strings",
+      "test": "skin_type='normal' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid skin_type 'normal'. Choose from: ['oily', 'dry', 'co"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid skin_type strings",
+      "test": "skin_type='all' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid skin_type 'all'. Choose from: ['oily', 'dry', 'combi"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid skin_type strings",
+      "test": "skin_type='None' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid skin_type 'None'. Choose from: ['oily', 'dry', 'comb"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid concern strings",
+      "test": "concern='wrinkles' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid concerns ['wrinkles']. Choose from: ['acne', 'dark_s"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid concern strings",
+      "test": "concern='breakouts' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid concerns ['breakouts']. Choose from: ['acne', 'dark_"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid concern strings",
+      "test": "concern='dark spots' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid concerns ['dark spots']. Choose from: ['acne', 'dark"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid concern strings",
+      "test": "concern='ACNE' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid concerns ['ACNE']. Choose from: ['acne', 'dark_spots"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid concern strings",
+      "test": "concern='oily' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid concerns ['oily']. Choose from: ['acne', 'dark_spots"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid undertone strings",
+      "test": "undertone='pink' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid undertone 'pink'. Choose from: ['warm', 'cool', 'neu"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid undertone strings",
+      "test": "undertone='olive' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid undertone 'olive'. Choose from: ['warm', 'cool', 'ne"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid undertone strings",
+      "test": "undertone='WARM' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid undertone 'WARM'. Choose from: ['warm', 'cool', 'neu"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid undertone strings",
+      "test": "undertone='Warm' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid undertone 'Warm'. Choose from: ['warm', 'cool', 'neu"
+    },
+    {
+      "suite": "G",
+      "group": "Invalid undertone strings",
+      "test": "undertone='golden' \u2192 ValueError",
+      "status": "PASS",
+      "detail": "Invalid undertone 'golden'. Choose from: ['warm', 'cool', 'n"
+    },
+    {
+      "suite": "G",
+      "group": "None values for optional parameters",
+      "test": "concerns=None: no crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "None values for optional parameters",
+      "test": "concerns=None \u2192 stored as []",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "None values for optional parameters",
+      "test": "undertone=None: no crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "None values for optional parameters",
+      "test": "undertone=None \u2192 makeup_recs=[]",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "None values for optional parameters",
+      "test": "undertone=None \u2192 colour_palette={}",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "None values for optional parameters",
+      "test": "skin_tone=None stored",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "Engine with completely empty DataFrames",
+      "test": "empty DFs: recommend() no crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "Engine with completely empty DataFrames",
+      "test": "empty DFs: skincare_recs=[]",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "Engine with completely empty DataFrames",
+      "test": "empty DFs: makeup_recs=[]",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "Engine with completely empty DataFrames",
+      "test": "empty DFs: colour_palette returned",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "Engine with single-row DataFrames",
+      "test": "1-row DFs: no crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "Engine with single-row DataFrames",
+      "test": "1-row DFs: skincare count \u2264 1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "Engine with single-row DataFrames",
+      "test": "1-row DFs: makeup count \u2264 1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "DataFrames with missing optional columns",
+      "test": "skincare no url: no crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "DataFrames with missing optional columns",
+      "test": "skincare no price: no crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "G",
+      "group": "DataFrames with missing optional columns",
+      "test": "skincare no rating: no crash",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "at least 100 skincare products",
+      "status": "PASS",
+      "detail": "3,474"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has column: product_id",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has column: name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has column: brand",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has column: category",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has column: source",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has column: product_kind",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has skin tag: skin_oily",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has skin tag: skin_dry",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has skin tag: skin_combination",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has skin tag: skin_sensitive",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has concern tag: concern_acne",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has concern tag: concern_dark_spots",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has concern tag: concern_redness",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has concern tag: concern_dullness",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has concern tag: concern_aging",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 shape and required columns",
+      "test": "has concern tag: concern_dryness",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 data integrity",
+      "test": "name null% < 5%",
+      "status": "PASS",
+      "detail": "0.0%"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 data integrity",
+      "test": "no duplicate product_ids",
+      "status": "PASS",
+      "detail": "0.0% dups"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 data integrity",
+      "test": "no negative prices",
+      "status": "PASS",
+      "detail": "0 negative"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 data integrity",
+      "test": "ratings in [0,5]",
+      "status": "PASS",
+      "detail": "min=nan max=nan"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 data integrity",
+      "test": "all product_kind=skincare",
+      "status": "PASS",
+      "detail": "0 wrong"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 tag coverage (> 0% means engine can match)",
+      "test": "skin_oily coverage > 0%",
+      "status": "PASS",
+      "detail": "3.3%"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 tag coverage (> 0% means engine can match)",
+      "test": "skin_dry coverage > 0%",
+      "status": "PASS",
+      "detail": "8.2%"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 tag coverage (> 0% means engine can match)",
+      "test": "skin_combination coverage > 0%",
+      "status": "PASS",
+      "detail": "1.2%"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 tag coverage (> 0% means engine can match)",
+      "test": "skin_sensitive coverage > 0%",
+      "status": "PASS",
+      "detail": "1.4%"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 tag coverage (> 0% means engine can match)",
+      "test": "concern_acne coverage > 0%",
+      "status": "PASS",
+      "detail": "6.9%"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 tag coverage (> 0% means engine can match)",
+      "test": "concern_dark_spots coverage > 0%",
+      "status": "PASS",
+      "detail": "6.8%"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 tag coverage (> 0% means engine can match)",
+      "test": "concern_redness coverage > 0%",
+      "status": "PASS",
+      "detail": "1.8%"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 tag coverage (> 0% means engine can match)",
+      "test": "concern_dullness coverage > 0%",
+      "status": "PASS",
+      "detail": "10.5%"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 tag coverage (> 0% means engine can match)",
+      "test": "concern_aging coverage > 0%",
+      "status": "PASS",
+      "detail": "11.2%"
+    },
+    {
+      "suite": "H",
+      "group": "skincare_products.csv \u2014 tag coverage (> 0% means engine can match)",
+      "test": "concern_dryness coverage > 0%",
+      "status": "PASS",
+      "detail": "9.7%"
+    },
+    {
+      "suite": "H",
+      "group": "makeup_products.csv \u2014 shape and columns",
+      "test": "at least 50 makeup products",
+      "status": "PASS",
+      "detail": "931"
+    },
+    {
+      "suite": "H",
+      "group": "makeup_products.csv \u2014 shape and columns",
+      "test": "has column: product_id",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "makeup_products.csv \u2014 shape and columns",
+      "test": "has column: name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "makeup_products.csv \u2014 shape and columns",
+      "test": "has column: brand",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "makeup_products.csv \u2014 shape and columns",
+      "test": "has column: product_type",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "makeup_products.csv \u2014 shape and columns",
+      "test": "has column: product_kind",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "makeup_products.csv \u2014 shape and columns",
+      "test": "has undertone tag: undertone_warm",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "makeup_products.csv \u2014 shape and columns",
+      "test": "has undertone tag: undertone_cool",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "makeup_products.csv \u2014 shape and columns",
+      "test": "has undertone tag: undertone_neutral",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "makeup_products.csv \u2014 shape and columns",
+      "test": "no untagged makeup products (neutral fallback applied)",
+      "status": "PASS",
+      "detail": "0 untagged"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "warm key present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "warm.blush has shades",
+      "status": "PASS",
+      "detail": "6 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "warm.lipstick has shades",
+      "status": "PASS",
+      "detail": "7 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "warm.eyeshadow has shades",
+      "status": "PASS",
+      "detail": "7 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "warm.highlighter has shades",
+      "status": "PASS",
+      "detail": "4 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "warm.foundation has shades",
+      "status": "PASS",
+      "detail": "4 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "cool key present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "cool.blush has shades",
+      "status": "PASS",
+      "detail": "6 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "cool.lipstick has shades",
+      "status": "PASS",
+      "detail": "7 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "cool.eyeshadow has shades",
+      "status": "PASS",
+      "detail": "7 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "cool.highlighter has shades",
+      "status": "PASS",
+      "detail": "4 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "cool.foundation has shades",
+      "status": "PASS",
+      "detail": "4 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "neutral key present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "neutral.blush has shades",
+      "status": "PASS",
+      "detail": "5 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "neutral.lipstick has shades",
+      "status": "PASS",
+      "detail": "5 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "neutral.eyeshadow has shades",
+      "status": "PASS",
+      "detail": "6 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "neutral.highlighter has shades",
+      "status": "PASS",
+      "detail": "4 shades"
+    },
+    {
+      "suite": "H",
+      "group": "colour_config.json \u2014 all undertones and product types",
+      "test": "neutral.foundation has shades",
+      "status": "PASS",
+      "detail": "4 shades"
+    },
+    {
+      "suite": "H",
+      "group": "keyword_maps.json \u2014 all maps present and non-empty",
+      "test": "skin_type_keywords present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "keyword_maps.json \u2014 all maps present and non-empty",
+      "test": "skin_type_keywords non-empty",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "keyword_maps.json \u2014 all maps present and non-empty",
+      "test": "skin_type_keywords all lists non-empty",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "keyword_maps.json \u2014 all maps present and non-empty",
+      "test": "concern_keywords present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "keyword_maps.json \u2014 all maps present and non-empty",
+      "test": "concern_keywords non-empty",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "keyword_maps.json \u2014 all maps present and non-empty",
+      "test": "concern_keywords all lists non-empty",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "keyword_maps.json \u2014 all maps present and non-empty",
+      "test": "undertone_keywords present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "keyword_maps.json \u2014 all maps present and non-empty",
+      "test": "undertone_keywords non-empty",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "keyword_maps.json \u2014 all maps present and non-empty",
+      "test": "undertone_keywords all lists non-empty",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "H",
+      "group": "Score distribution sanity (real skincare data)",
+      "test": "all scores in [0,1]",
+      "status": "PASS",
+      "detail": "min=0.0000 max=0.6000"
+    },
+    {
+      "suite": "H",
+      "group": "Score distribution sanity (real skincare data)",
+      "test": "score std > 0 (not all same)",
+      "status": "PASS",
+      "detail": "std=0.1031"
+    },
+    {
+      "suite": "H",
+      "group": "Score distribution sanity (real skincare data)",
+      "test": "top score > 0.1",
+      "status": "PASS",
+      "detail": "max=0.6000"
+    },
+    {
+      "suite": "I",
+      "group": "Single recommend() \u2014 20 runs",
+      "test": "mean < 200ms",
+      "status": "PASS",
+      "detail": "mean=7.17ms min=5.81ms max=9.65ms"
+    },
+    {
+      "suite": "I",
+      "group": "Single recommend() \u2014 20 runs",
+      "test": "max < 600ms (no outlier spike)",
+      "status": "PASS",
+      "detail": "max=9.65ms"
+    },
+    {
+      "suite": "I",
+      "group": "Batch 10 sequential calls",
+      "test": "batch 10 < 1500ms",
+      "status": "PASS",
+      "detail": "103.81ms total  (10.4ms avg)"
+    },
+    {
+      "suite": "I",
+      "group": "Individual method latency \u2014 20 runs each",
+      "test": "get_skincare < 100ms",
+      "status": "PASS",
+      "detail": "2.31ms"
+    },
+    {
+      "suite": "I",
+      "group": "Individual method latency \u2014 20 runs each",
+      "test": "get_makeup < 100ms",
+      "status": "PASS",
+      "detail": "2.31ms"
+    },
+    {
+      "suite": "I",
+      "group": "Individual method latency \u2014 20 runs each",
+      "test": "get_colour_palette < 5ms",
+      "status": "PASS",
+      "detail": "0.0ms"
+    },
+    {
+      "suite": "I",
+      "group": "load_engine() cold start \u2014 3 runs",
+      "test": "load_engine < 4000ms",
+      "status": "PASS",
+      "detail": "21ms"
+    },
+    {
+      "suite": "J",
+      "group": "Golden set 1: oily + acne + warm",
+      "test": "skincare[0] is sk_0",
+      "status": "PASS",
+      "detail": "got: sk_0"
+    },
+    {
+      "suite": "J",
+      "group": "Golden set 1: oily + acne + warm",
+      "test": "skincare[0] score = 1.0000",
+      "status": "PASS",
+      "detail": "got: 1.0000"
+    },
+    {
+      "suite": "J",
+      "group": "Golden set 1: oily + acne + warm",
+      "test": "skincare[-1] is sk_2 (no-match last)",
+      "status": "PASS",
+      "detail": "got: sk_2"
+    },
+    {
+      "suite": "J",
+      "group": "Golden set 1: oily + acne + warm",
+      "test": "makeup[0] is mk_0 (warm)",
+      "status": "PASS",
+      "detail": "got: mk_0"
+    },
+    {
+      "suite": "J",
+      "group": "Golden set 1: oily + acne + warm",
+      "test": "colour_palette has 5 product types",
+      "status": "PASS",
+      "detail": "got: 5"
+    },
+    {
+      "suite": "J",
+      "group": "Golden set 1: oily + acne + warm",
+      "test": "user_profile exact match",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "J",
+      "group": "Golden set 2: dry + redness + dryness + cool",
+      "test": "skincare[0] is sk_1",
+      "status": "PASS",
+      "detail": "got: sk_1"
+    },
+    {
+      "suite": "J",
+      "group": "Golden set 2: dry + redness + dryness + cool",
+      "test": "skincare[0] score = 0.975",
+      "status": "PASS",
+      "detail": "expected=0.975 got=0.9750"
+    },
+    {
+      "suite": "J",
+      "group": "Golden set 2: dry + redness + dryness + cool",
+      "test": "makeup[0] is mk_1 (cool)",
+      "status": "PASS",
+      "detail": "got: mk_1"
+    },
+    {
+      "suite": "J",
+      "group": "Golden set 3: sensitive + aging + neutral",
+      "test": "makeup[0] is mk_2 (neutral)",
+      "status": "PASS",
+      "detail": "got: mk_2"
+    },
+    {
+      "suite": "J",
+      "group": "Determinism \u2014 identical inputs produce identical outputs",
+      "test": "result dicts are equal (excluding timestamp metadata)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "J",
+      "group": "Determinism \u2014 identical inputs produce identical outputs",
+      "test": "scores are identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "suite": "J",
+      "group": "Rank stability \u2014 sk_0 always beats sk_1 and sk_2 for oily+acne",
+      "test": "score(sk_0) > score(sk_1)",
+      "status": "PASS",
+      "detail": "1.0000 vs 0.1750"
+    },
+    {
+      "suite": "J",
+      "group": "Rank stability \u2014 sk_0 always beats sk_1 and sk_2 for oily+acne",
+      "test": "score(sk_0) > score(sk_2)",
+      "status": "PASS",
+      "detail": "1.0000 vs 0.1042"
+    },
+    {
+      "suite": "J",
+      "group": "Rank stability \u2014 sk_0 always beats sk_1 and sk_2 for oily+acne",
+      "test": "score(sk_1) > score(sk_2)",
+      "status": "PASS",
+      "detail": "0.1750 vs 0.1042"
+    },
+    {
+      "suite": "J",
+      "group": "VALID_* class constants match notebook 03 definitions",
+      "test": "VALID_SKIN_TYPES",
+      "status": "PASS",
+      "detail": "['oily', 'dry', 'combination', 'sensitive']"
+    },
+    {
+      "suite": "J",
+      "group": "VALID_* class constants match notebook 03 definitions",
+      "test": "VALID_CONCERNS",
+      "status": "PASS",
+      "detail": "['acne', 'dark_spots', 'redness', 'dullness', 'aging', 'dryness']"
+    },
+    {
+      "suite": "J",
+      "group": "VALID_* class constants match notebook 03 definitions",
+      "test": "VALID_UNDERTONES",
+      "status": "PASS",
+      "detail": "['warm', 'cool', 'neutral']"
+    }
+  ]
+}

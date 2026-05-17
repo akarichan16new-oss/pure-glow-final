@@ -1,0 +1,31 @@
+﻿@"
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
+build/
+
+# Secret files
+.env
+.env.local
+
+# Large files - do not upload to GitHub
+data/
+models/
+*.csv
+*.pkl
+*.joblib
+*.h5
+*.keras
+*.onnx
+
+# Editor/system
+.vscode/
+.DS_Store
+Thumbs.db
+"@ | Set-Content .gitignore
